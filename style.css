@@ -9,6 +9,7 @@ body {
 }
 
 #main-text {
+  font-family: sans-serif;
   margin-left: 7vw;
   margin-right: 7vw;
 }
