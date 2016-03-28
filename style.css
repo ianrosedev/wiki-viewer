@@ -1,8 +1,5 @@
 body {
   background-color: #FFF;
-}
-
-#header {
   font-family: 'Hoefler Text';
 }
 
@@ -14,6 +11,10 @@ body {
 #main-text {
   margin-left: 7vw;
   margin-right: 7vw;
+}
+
+#input, #button {
+  
 }
 
 #random {
