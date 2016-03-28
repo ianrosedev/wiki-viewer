@@ -1,7 +1,7 @@
  $(function() {
   // Search Wikipedia
-  $("#searchterm").keyup(function(e) {
-    var q = $("#searchterm").val();
+  $("#search, #search-term").on('click keyup', function(e) {
+    var q = $("#search-term").val();
     $.getJSON("http://en.wikipedia.org/w/api.php?callback=?",
       {
         srsearch: q,
@@ -11,8 +11,8 @@
       },
     function(data) {
       $("#results").empty();
-      $("#results").append("<p>Results for <b>" + q + "</b></p>");
-      $.each(data.query.search, function(i,item){
+      $("#results").append("<h3>Results for: <b>" + q + "</b></h3>");
+      $.each(data.query.search, function(i, item){
       $("#results").append("<div><a href='http://en.wikipedia.org/wiki/" + encodeURIComponent(item.title) + "'>" + item.title + "</a><br>" + item.snippet + "<br><br></div>");
       });
     });
