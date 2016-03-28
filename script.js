@@ -11,14 +11,14 @@
       },
     function(data) {
       $("#results").empty();
-      $("#results").append("<h3>Results for: <b>" + q + "</b></h3>");
+      $("#results").append("<h2>Results for: <b>" + q + "</b></h2>");
       $.each(data.query.search, function(i, item){
       $("#results").append("<div><a href='http://en.wikipedia.org/wiki/" + encodeURIComponent(item.title) + "'>" + item.title + "</a><br>" + item.snippet + "<br><br></div>");
       });
     });
   });
 
-  // Button redirects to random wiki page
+  // Get random wiki page
   $('#random').click(function() {
     window.location.href = 'http://en.wikipedia.org/wiki/Special:Random';
   });

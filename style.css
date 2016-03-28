@@ -2,11 +2,29 @@ body {
   background-color: #FFF;
 }
 
-#main-content {
-  margin: 4vw;
+#header {
+  font-family: 'Hoefler Text';
 }
 
-#test {
+#main-content {
+  margin: 4vw;
   text-align: center;
 }
+
+#main-text {
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
+
+#random {
+  margin-bottom: 5vh;
+}
+
+#results {
+  text-align: left;
+}
+
+
+
+
 
